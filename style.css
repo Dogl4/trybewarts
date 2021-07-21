@@ -1,7 +1,7 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: fantasy;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .header {
@@ -31,4 +31,9 @@
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
 }
