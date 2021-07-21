@@ -24,27 +24,31 @@
   </header>
 
   <main class="d-flex">
-    <form id="evaluation-form" class="d-flex forms flex-column">
-      <div class="row g-2">
-        <div class="col-auto">
-          <input type="text" name="nome" id="input-name" placeholder="Nome">
+    <form id="evaluation-form" class="d-flex forms flex-column mx-3 my-1">
+      <h1 class="d-flex justify-content-center">Forms</h1>
+      <div class="row g-2 d-flex justify-content-center">
+        <div class="col-auto mb-1">
+          <input type="text" name="nome" id="input-name" placeholder="Nome" class="form-control">
         </div>
         <div class="col-auto">
-          <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome">
+          <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome"
+            class="form-control">
         </div>
       </div>
-      <div class="row g-2">
+      <div class="row g-2 d-flex justify-content-center">
         <div class="col-auto">
-          <input type="email" name="email" id="input-email" placeholder="Email">
+          <input type="email" name="email" id="input-email" placeholder="Email" class="form-control">
         </div>
         <div class="col-auto">
-          <label for="house">Casa</label>
-          <select name="casas" id="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
+          <div class="d-flex">
+            <label for="house" class="d-flex align-items-center me-2 ms-4">Casa</label>
+            <select name="casas" id="house" class="form-select d-flex ms-2">
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </div>
         </div>
       </div>
       <hr>

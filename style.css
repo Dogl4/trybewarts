@@ -11,7 +11,6 @@
   justify-content: space-between;
 }
 
-
 .trybewarts-header-logo {
   width: 60px;
 }
@@ -46,4 +45,12 @@
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+main .form-control {
+  border: solid rgba(128, 128, 128, 0.33);
+}
+
+.form-select {
+  border: solid rgba(128, 128, 128, 0.33);
 }
