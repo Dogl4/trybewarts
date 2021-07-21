@@ -11,18 +11,28 @@
   justify-content: space-between;
 }
 
+
 .trybewarts-header-logo {
-  width: 120px;
+  width: 60px;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+}
+
+.header input {
+  width: 120px;
+  margin-right: 6px;
 }
 
 #trybewarts-header-title {
   display: flex;
   align-items: center;
+  margin-top: 6px;
+  color: white;
+  font-weight: 600;
 }
 
 .forms {
