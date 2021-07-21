@@ -1,7 +1,7 @@
 const botao = document.getElementById('btn-logar');
+const botaoEnviar = document.getElementById('submit-btn');
 const login = document.getElementById('login');
 const senha = document.getElementById('senha');
-const botaoEnviar = document.querySelector('#submit-btn');
 const termos = document.querySelector('#agreement');
 
 botao.addEventListener('click', () => {
