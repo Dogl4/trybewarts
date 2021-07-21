@@ -19,3 +19,12 @@ termos.addEventListener('click', () => {
     botaoEnviar.disabled = true;
   }
 });
+
+// Requisito 20:
+const texto = document.getElementById('textarea');
+texto.addEventListener('input', () => {
+  const num = 500 - document.getElementById('textarea').value.length;
+  if (num >= 0) {
+    document.getElementById('counter').innerText = num;
+  }
+});
