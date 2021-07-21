@@ -28,3 +28,8 @@ texto.addEventListener('input', () => {
     document.getElementById('counter').innerText = num;
   }
 });
+
+// Requisito 21:
+botaoEnviar.addEventListener('click', () => {
+  document.createElement('div');
+});
