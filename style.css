@@ -57,7 +57,7 @@ main .form-control {
   width: 244px;
 }
 
-#area {
+#textarea {
   width: 670px;
 }
 
@@ -69,7 +69,7 @@ label {
   position: relative;
 }
 
-.counter {
+#counter {
   position: absolute;
   right: 27px;
   bottom: 0;
