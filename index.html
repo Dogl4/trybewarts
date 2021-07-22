@@ -23,25 +23,24 @@
     </form>
   </header>
 
-  <main class="d-flex">
-    <form id="evaluation-form" class="d-flex forms flex-column mx-3 my-1">
+  <main class="d-flex justify-content-evenly align-items-center pt-2 pe-3">
+    <form id="evaluation-form" class="d-flex forms flex-column">
       <h1 class="d-flex justify-content-center">Forms</h1>
       <div class="row g-2 d-flex justify-content-center">
         <div class="col-auto mb-1">
           <input type="text" name="nome" id="input-name" placeholder="Nome" class="form-control">
         </div>
         <div class="col-auto">
-          <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome"
-            class="form-control">
+          <input type="text" name="sobreNome" id="input-lastname" placeholder="Sobrenome" class="form-control">
         </div>
       </div>
       <div class="row g-2 d-flex justify-content-center">
         <div class="col-auto">
-          <input type="email" name="email" id="input-email" placeholder="Email" class="form-control">
+          <input type="email" name="email" id="input-email" placeholder="Email" class="form-control me-2">
         </div>
         <div class="col-auto">
           <div class="d-flex">
-            <label for="house" class="d-flex align-items-center me-2 ms-4">Casa</label>
+            <label for="house" class="d-flex align-items-center me-1 ms-4">Casa</label>
             <select name="casas" id="house" class="form-select d-flex ms-2">
               <option id="gitnoria-house" value="Gitnória">Gitnória</option>
               <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -52,59 +51,59 @@
         </div>
       </div>
       <hr>
-      <div class="col-auto me-4">
-        <label for="familia" id="label-family" class="mb-2">Qual sua família?</label>
-        <div class="form-check">
-          <input type="radio" name="family" id="frontend" class="form-check-input" value="Frontend">
-          <label for="frontend">Família Frontend</label>
+      <div class="row g-2 d-flex justify-content-center ps-3">
+        <div class="col-auto">
+          <label for="familia" id="label-family" class="mb-2">Qual sua família?</label>
+          <div class="form-check">
+            <input type="radio" name="family" id="frontend" class="form-check-input" value="Frontend">
+            <label for="frontend">Família Frontend</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="family" id="backend" class="form-check-input" value="Backend">
+            <label for="backend">Família Backend</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="family" id="fullStack" class="form-check-input" value="FullStack">
+            <label for="fullStack">Família FullStack</label>
+          </div>
         </div>
-        <div class="form-check">
-          <input type="radio" name="family" id="backend" class="form-check-input" value="Backend">
-          <label for="backend">Família Backend</label>
-        </div>
-        <div class="form-check">
-          <input type="radio" name="family" id="fullStack" class="form-check-input" value="FullStack">
-          <label for="fullStack">Família FullStack</label>
-        </div>
-      </div>
-      <!--       
-      <div class="col-auto">
-        <label id="label-family">Qual sua família?</label>
-        <label for="front"><input id="front" type="radio" name="family" value="Frontend">Frontend</label>
-        <label for="back"><input id="back" type="radio" name="family" value="Backend">Backend</label>
-        <label for="full"><input id="full" type="radio" name="family" value="FullStack">FullStack</label>
-      </div>
-      -->
-      <div class="col-auto me-4">
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="hofs" class="subject form-check-input" value="HoFs">
-          <label for="hofs">HoFs</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="jest" class="subject form-check-input" value="Jest">
-          <label for="jest">Jest</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="promises" class="subject form-check-input" value="Promises">
-          <label for="promises">Promises</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="react" class="subject form-check-input" value="React">
-          <label for="react">React</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="sql" class="subject form-check-input" value="SQL">
-          <label for="sql">SQL</label>
-        </div>
-        <div class="form-check">
-          <input type="checkbox" name="ling" id="python" class="subject form-check-input" value="Python">
-          <label for="python">Python</label>
+        <div class="col-auto ps-3">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="d-flex flex-column ms-3 mt-2">
+            <div class="row g-3">
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="hofs" class="subject form-check-input" value="HoFs">
+                <label for="hofs">HoFs</label>
+              </div>
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="jest" class="subject form-check-input" value="Jest">
+                <label for="jest">Jest</label>
+              </div>
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="promises" class="subject form-check-input" value="Promises">
+                <label for="promises">Promises</label>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="react" class="subject form-check-input" value="React">
+                <label for="react">React</label>
+              </div>
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="sql" class="subject form-check-input" value="SQL">
+                <label for="sql">SQL</label>
+              </div>
+              <div class="form-check col-auto">
+                <input type="checkbox" name="ling" id="python" class="subject form-check-input" value="Python">
+                <label for="python">Python</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <hr>
       <div class="d-flex align-items-center">
-        <label id="label-rate" class="me-2">Como você avalia a Trybewarts?</label>
+        <label id="label-rate" class="me-3">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value="1" id="1"><label for="1" class="me-2">1</label>
         <input type="radio" name="rate" value="2" id="2"><label for="2" class="me-2">2</label>
         <input type="radio" name="rate" value="3" id="3"><label for="3" class="me-2">3</label>
@@ -116,19 +115,21 @@
         <input type="radio" name="rate" value="9" id="9"><label for="9" class="me-2">9</label>
         <input type="radio" name="rate" value="10" id="10"><label for="10">10</label>
       </div>
-      <div class="caixa-contador">
-        <label for="area" class="textarea">Deixe seu comentário:</label>
+      <div class="caixa-contador mt-2">
+        <label for="area" class="textarea mb-1">Deixe seu comentário:</label>
         <textarea name="opiniao" id="area" cols="30" rows="5" maxlength="500" class="form-control"></textarea>
         <p class="counter">500</p>
       </div>
-      <input type="checkbox" name="termos" id="agreement" required>
-      <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <div class="form-check d-flex align-items-center mb-2">
+        <input type="checkbox" name="termos" id="agreement" class="form-check-input me-2"  required>
+        <label for="agreement" id="label-infos" class="form-check-label mt-1">Você concorda com o uso das informações acima?</label>
+      </div>
+      <button type="submit" id="submit-btn" class="btn btn-primary" disabled>Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Logotipo-do-TrybeWarts" id="trybewarts-forms-logo">
   </main>
-  <footer>
-    <p>Direitos reservados à Trybewarts©</p>
+  <footer class="text-light bg-dark d-flex justify-content-center mt-3 pt-2">
+    <p class="d-flex align-items-end">Direitos reservados à Trybewarts©</p>
   </footer>
   <script src="script.js"></script>
 </body>

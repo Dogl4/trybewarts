@@ -48,9 +48,29 @@
 }
 
 main .form-control {
-  border: solid rgba(128, 128, 128, 0.33);
+  border: solid rgba(128, 128, 128, 0.38);
+  width: 328px;
 }
 
 .form-select {
-  border: solid rgba(128, 128, 128, 0.33);
+  border: solid rgba(128, 128, 128, 0.38);
+  width: 244px;
+}
+
+#area {
+  width: 670px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.caixa-contador {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  right: 27px;
+  bottom: 0;
 }
