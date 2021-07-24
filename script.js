@@ -71,15 +71,23 @@ texto.addEventListener('input', () => {
 //   }
 // });
 
-// Função verifica qual radio está selecionado, logo após já o guarda
-function guardaRadioSelecionado(array) {
-  // const array = document.getElementsByName(`${rate}`);
+// // Função verifica qual radio está selecionado
+// function valueRadio(array) {
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i].checked) {
+//       return array[i].valeu;
+//     }
+//   }
+// }
+
+// Função verifica qual radio está selecionado, logo após, já o guarda
+const guardaRadioSelecionado = (array, nomeChave) => {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].checked) {
-      return array[index].value;
+      localStorage.setItem(`${nomeChave}:`, array[index].value);
     }
   }
-}
+};
 
 // Função verifica qual checkbox está selecionado, logo após já o guarda
 const guardaCheckboxSelecionado = (array, nomeChave) => {
@@ -94,12 +102,16 @@ const guardaCheckboxSelecionado = (array, nomeChave) => {
 
 // Requisito 21:
 botaoEnviar.addEventListener('click', () => {
+  guardaRadioSelecionado(familia, 'Família');
+  guardaRadioSelecionado(nota, 'Avaliação');
+
+  localStorage.clear();
   form.innerHTML = '';
   form.innerHTML += `<p>Nome: ${nome.value} ${sobrenome.value}</p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
   form.innerHTML += `<p>Casa: ${casa.value}</p>`;
-  form.innerHTML += `<p>Família: ${guardaRadioSelecionado(familia)}</p>`;
+  // form.innerHTML += `<p>Família: ${localStorage.getItem('Família')}</p>`;
   form.innerHTML += `<p>${guardaCheckboxSelecionado(skills, 'Matérias')}</p>`;
-  form.innerHTML += `<p>Avaliação: ${guardaRadioSelecionado(nota)}</p>`;
+  // form.innerHTML += `<p>Avaliação: ${localStorage.getItem('Avaliação')}</p>`;
   form.innerHTML += `<p>Observações: ${texto.value}</p>`;
 });
