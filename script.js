@@ -72,10 +72,10 @@ texto.addEventListener('input', () => {
 // });
 
 // Função verifica qual radio está selecionado, logo após já o guarda
-function guardaRadioSelecionado(array) {
+function guardaRadioSelecionado(array, nomeChave) {
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].checked) {
-      return array[index].value;
+      return `${nomeChave}: ${array[index].value}`;
     }
   }
 }
@@ -99,8 +99,8 @@ botaoEnviar.addEventListener('click', () => {
   form.innerHTML += `<p>Nome: ${nome.value} ${sobrenome.value} </p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
   form.innerHTML += `<p>Casa: ${casa.value} </p>`;
-  form.innerHTML += `<p>Família: ${guardaRadioSelecionado(familia)} </p>`;
+  form.innerHTML += `<p>${guardaRadioSelecionado(familia, 'Família')} </p>`;
   form.innerHTML += `<p>${guardaCheckboxSelecionado(skills, 'Matérias')} </p>`;
-  form.innerHTML += `<p>Avaliação: ${guardaRadioSelecionado(avalia)} </p>`;
+  form.innerHTML += `<p>${guardaRadioSelecionado(avalia, 'Avaliação')} </p>`;
   form.innerHTML += `<p>Observações: ${texto.value} </p>`;
 });
