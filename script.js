@@ -8,6 +8,7 @@ const nome = document.getElementById('input-name');
 const sobrenome = document.getElementById('input-lastname');
 const email = document.getElementById('input-email');
 const casa = document.getElementById('house');
+const familia = document.getElementsByName('family');
 
 botao.addEventListener('click', () => {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
@@ -34,12 +35,22 @@ texto.addEventListener('input', () => {
   }
 });
 
+// Função verifica qual radio está selecionado
+const guardaRadioSelecio = (array, nomeChave) => {
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index].checked) {
+      localStorage.setItem(`${nomeChave}:`, array[index].value);
+    }
+  }
+};
+
 // Requisito 21:
 botaoEnviar.addEventListener('click', () => {
   localStorage.clear();
   localStorage.setItem('Nome:', `${nome.value} ${sobrenome.value}`);
   localStorage.setItem('Email:', email.value);
   localStorage.setItem('Casa:', casa.value);
+  guardaRadioSelecio(familia, 'Família');
   // localStorage.setItem('Família:', familia.value);
   while (form.firstChild) {
     form.removeChild(form.firstChild);
