@@ -8,8 +8,8 @@ const nome = document.getElementById('input-name');
 const sobrenome = document.getElementById('input-lastname');
 const email = document.getElementById('input-email');
 const casa = document.getElementById('house');
+const nota = document.getElementsByName('rate');
 const familia = document.getElementsByName('family');
-const avalia = document.getElementsByName('rate');
 const texto = document.getElementById('textarea');
 const skills = document.querySelectorAll('.subject');
 
@@ -72,10 +72,11 @@ texto.addEventListener('input', () => {
 // });
 
 // Função verifica qual radio está selecionado, logo após já o guarda
-function guardaRadioSelecionado(array, nomeChave) {
+function guardaRadioSelecionado(array) {
+  // const array = document.getElementsByName(`${rate}`);
   for (let index = 0; index < array.length; index += 1) {
     if (array[index].checked) {
-      return `${nomeChave}: ${array[index].value}`;
+      return array[index].value;
     }
   }
 }
@@ -91,16 +92,14 @@ const guardaCheckboxSelecionado = (array, nomeChave) => {
   return guarda;
 };
 
-// const checkboxSeleceted = (array) => {
-
 // Requisito 21:
 botaoEnviar.addEventListener('click', () => {
   form.innerHTML = '';
-  form.innerHTML += `<p>Nome: ${nome.value} ${sobrenome.value} </p>`;
+  form.innerHTML += `<p>Nome: ${nome.value} ${sobrenome.value}</p>`;
   form.innerHTML += `<p>Email: ${email.value}</p>`;
-  form.innerHTML += `<p>Casa: ${casa.value} </p>`;
-  form.innerHTML += `<p>${guardaRadioSelecionado(familia, 'Família')} </p>`;
-  form.innerHTML += `<p>${guardaCheckboxSelecionado(skills, 'Matérias')} </p>`;
-  form.innerHTML += `<p>${guardaRadioSelecionado(avalia, 'Avaliação')} </p>`;
-  form.innerHTML += `<p>Observações: ${texto.value} </p>`;
+  form.innerHTML += `<p>Casa: ${casa.value}</p>`;
+  form.innerHTML += `<p>Família: ${guardaRadioSelecionado(familia)}</p>`;
+  form.innerHTML += `<p>${guardaCheckboxSelecionado(skills, 'Matérias')}</p>`;
+  form.innerHTML += `<p>Avaliação: ${guardaRadioSelecionado(nota)}</p>`;
+  form.innerHTML += `<p>Observações: ${texto.value}</p>`;
 });
