@@ -1,6 +1,7 @@
 # Projeto Trybewarts
 
-<img src="pagina-principal.png" alt="Print da página inicial deste projeto rodando">
+[Site no ar](https://dogl4.github.io/trybewarts/index.html)
+[<img src="pagina-principal.png" alt="Print da página inicial deste projeto rodando">](https://dogl4.github.io/trybewarts/index.html)
 
 ## Descrição
 
@@ -36,7 +37,7 @@ Estas pessoas participaram deste projeto:
   <tr  style="width:120px">
     <td align="center">
       <a target=”_blank” href="https://github.com/Dogl4">
-        <img src="https://avatars.githubusercontent.com/u/85720722?s=400&u=c260de98c1eee20df67d72857c3bcc8682fed68a&v=4" width="80px;" alt="Foto do Pedro Barreto no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/85720722?s=400&u=c260de98c1eee20df67d72857c3bcc8682fed68a&v=4" width="100px;" alt="Foto do Pedro Barreto no GitHub"/><br>
         <sub>
           <b>Pedro Barreto</b>
         </sub>
@@ -44,31 +45,31 @@ Estas pessoas participaram deste projeto:
     </td>
     <td align="center">
       <a target=”_blank” href="https://github.com/Vincenzofdg">
-        <img src="https://avatars.githubusercontent.com/u/79121466?v=4" width="80px;" alt="Foto do Vincenzo Giacomo no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/79121466?v=4" width="100px;" alt="Foto do Vincenzo Giacomo no GitHub"/><br>
         <sub>
-          <b>Vincenzo Giacomo</b>
+          <b>Vincenzo G.</b>
         </sub>
       </a>
     </td>
     <td align="center">
       <a target=”_blank” href="https://github.com/betrybe">
-        <img src="https://avatars.githubusercontent.com/u/55410300?s=200&v=4" width="80px;" alt="Foto Trybe"/><br>
+        <img src="https://avatars.githubusercontent.com/u/55410300?s=200&v=4" width="100px;" alt="Foto Trybe"/><br>
         <sub>
           <b>Trybe</b>
         </sub>
       </a>
     </td>
   </tr>
-  <td width="120px">
-    Responsável a parte do HTML e CSS.
+  <td width="120px;">
+    HTML/CSS.
   </td>
 
-  <td width="120px">
-    Responsável a parte do JavaScript.
+  <td width="120px;">
+    JavaScript.
   </td>
 
-  <td width="120px">
-    Responsável pela ideia.
+  <td width="120px;">
+    Ideia.
   </td>
   </th>
 </table>
